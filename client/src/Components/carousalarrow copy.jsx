@@ -8,7 +8,7 @@ import React from "react";
     />
     );
 };
-export const PrevArrow =(props)=>
+export const PreviousArrow =(props)=>
 {
     return(
     <div className={props.className}

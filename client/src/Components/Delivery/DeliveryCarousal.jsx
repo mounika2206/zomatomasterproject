@@ -1,7 +1,7 @@
 import React from "react";
 import DeliveryCatagory from "./DeliveryCatagory";
 import Slider from "react-slick";
-import { NextArrow,PreviousArrow } from "../carousalarrow";
+import { NextArrow,PrevArrow } from "../carousalarrow";
 const DeliveryCarousal=()=>
 {
     const categories=[{
@@ -45,7 +45,7 @@ const settings={
     slidesToShow:4,
     slidesToScroll:1,
     nextArrow:<NextArrow/>,
-    prevArrow:<PreviousArrow/>
+    prevArrow:<PrevArrow/>
 };
     return(
     <>
