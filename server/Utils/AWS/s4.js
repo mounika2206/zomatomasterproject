@@ -1,4 +1,5 @@
 import AWS from "aws-sdk";
+require("dotenv").config();
 const s3Bucket=new AWS.S3({
     accesskeyId:process.env.AWS_S3_ACCESS_KEY,
     secretaccesskey:process.env.AWS_S3_SECRET_KEY,

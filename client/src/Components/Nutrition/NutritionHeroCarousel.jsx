@@ -1,6 +1,6 @@
 import React,{useState} from "react";
 import Slider from "react-slick";
-import NutritionCarouselCard from "./NutritionCarouselCard";
+import NutritionHeroCarouselCard from "./NutritionHeroCarouselCard";
 import { NextArrow, PrevArrow } from "../carousalarrow";
 const NutritionCarousel=()=>
 {
@@ -23,7 +23,7 @@ const NutritionCarousel=()=>
     };
     return<Slider {...settings}>
         {heroBanners.map((image)=>(
-          <NutritionCarouselCard image={image}/>
+          <NutritionHeroCarouselCard image={image}/>
         ))}
         
     </Slider>

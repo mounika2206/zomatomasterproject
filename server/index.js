@@ -13,7 +13,7 @@ import Image from "./API/Image"
 //import img from "./API/Image"
 import Order from "./API/orders";
 import Review from "./API/reviews";
-
+import MailService from "./API/Mail";
 import ConnectionDB from "./database/connection";
 const zomato=express();
 zomato.use(express.json());
@@ -31,6 +31,7 @@ zomato.use("/menu",Menu);
 zomato.use("/image",Image);
 zomato.use("/orders",Order);
 zomato.use("/reviews",Review);
+zomato.use("/mail", MailService);
 
 
 zomato.get("/",(req,res)=>  res.json({message:"Setup successs"}));
@@ -62,3 +63,7 @@ console.log("Server is Running,But database connection failed")));
 //AWS_S3_ACCESS_KEY=AKIAUUHG4FK77YD3MIVP
 //AWS_S3_SECRET_KEY=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
 //AWS_SDK_LOAD_CONFIG=1
+
+
+//AWS_S3_ACCESS_KEY=AKIAUUHG4FK7ZJCJ6RFF
+//AWS_S3_SECRET_KEY=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
