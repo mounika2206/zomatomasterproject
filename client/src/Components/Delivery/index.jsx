@@ -1,6 +1,6 @@
-import react,{useState} from "react";
+import React,{useState} from "react";
 import DeliveryCarousal from "./DeliveryCarousal";
-import Brand from "./Brand";
+//import Brand from "./Brand";
 import RestaurantCard from "./RestaurantCard";
 
 const Delivery=()=>

@@ -1,14 +1,13 @@
 import React from "react";
 import { TiStarOutline } from "react-icons/ti";
 import{RiDirectionLine,RiShareForwardLine} from "react-icons/ri";
-
-
-import RestaurantNavbar from "../Components/Navbar/RestaurantNavbar";
+import RestaurantNavbar from "../Components/Navbar/restaurantNavbar";
 import ImageGrid from "../Components/restaurant/ImageGrid";
 import RestaurantInfo from "../Components/restaurant/RestaurantInfo";
 import InfoButtons from "../Components/restaurant/InfoButtons";
 import { BiBookmarkPlus } from "react-icons/bi";
-const RestaurantLayout=()=>
+import TabContainer from "../Components/restaurant/Tabs";
+const RestaurantLayout=(props)=>
 {
     return(
         <>
@@ -45,6 +44,10 @@ const RestaurantLayout=()=>
             <RiShareForwardLine /> Share
           </InfoButtons>
         </div>
+        <div className="my-10">
+        <TabContainer/>
+        </div>
+        {props.children}
             </div>
             
 
