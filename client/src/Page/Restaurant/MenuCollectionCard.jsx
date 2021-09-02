@@ -5,6 +5,8 @@ const MenuCollectionCard=(props)=>
     
         return(
             <>
+            <div className="mx-2 gap-3" >
+                
             <div className="bg-white shadow rounded-md w-24 md:w-64  ">
                 <div className="w-full  h-48">
                     <img src={props.image}
@@ -34,6 +36,8 @@ const MenuCollectionCard=(props)=>
             
                <h4>Street Food,Beverages,Tea</h4>
                 </div>
+            </div>
+            
             </div>
             </>
     );
